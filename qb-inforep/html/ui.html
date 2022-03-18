@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./reset.css"/>
+        <title>QBCore Info Rep</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <div class="scoreboard-header">
+                  <p>Panel de Reputación</p>
+                </div>
+                <div class="scoreboard-info">
+
+                    <div class="scoreboard-info-beam" style="text-align: center; margin-top: 2px; font-size: 1vh;"> 
+                        <p><i class="fas fa-poll"></i> Reputación de Trabajos</p>
+                    </div>
+
+                    <div class="scoreboard-info-beam" data-type="grua">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-car-crash"></i> Remolcador:</p>
+                        </div>
+                        <div class="info-beam-status" id="grua" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="hotdogs">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-hotdog"></i> Hotdogs:</p>
+                        </div>
+                        <div class="info-beam-status" id="hotdogs" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="taxi">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-taxi"></i> Taxi:</p>
+                        </div>
+                        <div class="info-beam-status" id="taxi" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="camion">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-truck"></i> Camionero:</p>
+                        </div>
+                        <div class="info-beam-status" id="camion" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="drogas">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-cannabis"></i> Drogas:</p>
+                        </div>
+                        <div class="info-beam-status" id="drogas" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+
+                    <div class="scoreboard-info-bea" style="text-align: center; padding-top: 5px; font-size: 1.5vh;">
+                        <p></p>
+                    </div>
+                
+                    <div class="scoreboard-info-beam" style="text-align: center; padding-top: 2px; font-size: 1vh;"> 
+                        <p><i class="fas fa-hammer"></i> Reputación de Fabricación</p>
+                    </div>
+
+                    <div class="scoreboard-info-beam" data-type="fabricar">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-pencil-ruler"></i> General:</p>
+                        </div>
+                        <div class="info-beam-status" id="fabricar" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="componentes">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-server"></i> Componentes:</p>
+                        </div>
+                        <div class="info-beam-status" id="componentes" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 puntos</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

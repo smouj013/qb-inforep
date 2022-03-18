@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.container {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.scoreboard-block {
+  display: none;
+  position: absolute;
+  height: 57vh;
+  width: 42vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-left: 0.5px solid;
+  border-right:0.5px solid;
+  border-image: linear-gradient(var(--angle), #a7a209,#c3252500,#c3252500,#c3252500,#a7a209) 1;
+  animation: 3s rotate linear infinite,gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #000000, #282828,#000000,#282828,#000000);
+  right: 80vh;
+  top: 20vh;
+  margin: 1vh;
+}
+
+.scoreboard-header {
+  border-radius: 1vh;
+  position: relative;
+  width: 92%;
+  height: 5vh;
+  margin: 1.7vh 1.3vh 0vh 1.7vh;
+  border-bottom: 2px solid rgba(175, 163, 0, 0.8);
+}
+
+.scoreboard-header > p {
+  text-align: center;
+  font-weight: bold;
+  color: #ededed;
+  padding: 1.3vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vh;
+}
+#status-tab-label {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  right: 3vh;
+  font-weight: bold;
+}
+
+.info-beam-title {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3vh;
+  letter-spacing: 0.1vh;
+  left: 2.7vh;
+  line-height: 4vh;
+  font-weight: bold;
+  color: #ededed;
+}
+
+.info-beam-title-players {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3vh;
+  letter-spacing: 0.1vh;
+  left: 2.4vh;
+  line-height: 4vh;
+  font-weight: bold;
+  color: #ededed;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.info-beam-status {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  right: 3vh;
+  float: left;
+  text-align: left;
+  line-height: 4.25vh;
+}
+
+.scoreboard-info-beam {
+  top: 30px;
+  position: relative;
+  height: 4.25vh;
+  width: 100%;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+.scoreboard-info-beam > p {
+color: white;
+font-size: 1.5vh;
+padding-top: 0.5px;
+}
+
+.scoreboard-info {
+  top: 30px;
+}
+
+.fa-times {
+  color: #dc143c;
+}
+
+.fa-check {
+  color: #28a745;
+}
+
+.fa-clock {
+  color: #2873a7;
+}
+
+.grua {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.hotdogs {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.taxi {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.camion {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.drogas {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.fabricar {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+.componentes {
+  text-align: right;
+  text-shadow: 1px 1px 3px black;
+}
+
+
+
+
+@keyframes lds-ring {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes shake-slow {
+  0% {
+      transform: translate(0, 0) rotate(0)
+  }
+  15% {
+      transform: translate(4px, 2px) rotate(-.1deg)
+  }
+  30% {
+      transform: translate(3px, -5px) rotate(0.5deg)
+  }
+  50% {
+      transform: translate(4px, -3px) rotate(-.5deg)
+  }
+  70% {
+      transform: translate(-3px, 3px) rotate(1.2deg)
+  }
+  85% {
+      transform: translate(-3px, 3px) rotate(1.2deg)
+  }
+  100% {
+      transform: translate(0, 0) rotate(0)
+  }
+}
+
+@keyframes shake-slow3 {
+  0% {
+      filter: brightness(0.90);
+      transform: translate(0, 0) rotate(0)
+  }
+  15% {
+      transform: translate(4px, 2px) rotate(-.1deg)
+  }
+  30% {
+      transform: translate(3px, -5px) rotate(0.5deg);
+              filter: brightness(1);
+  }
+  50% {
+      filter: brightness(1.5);
+      transform: translate(4px, -3px) rotate(-.5deg)
+  }
+  70% {
+      transform: translate(-3px, 3px) rotate(1.2deg);
+              filter: brightness(1);
+  }
+  85% {
+      transform: translate(-3px, 3px) rotate(1.2deg)
+  }
+  100% {
+      transform: translate(0, 0) rotate(0);
+      filter: brightness(0.90);
+  }
+}
+
+@keyframes shake-slow2{
+  0%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(30deg)}
+  15%{transform:translate(4px, 2px) rotate(-.1deg) perspective(1600px) rotateY(30deg)}
+  30%{transform:translate(3px, -5px) rotate(0.5deg) perspective(1600px) rotateY(30deg)}
+  50%{transform:translate(4px, -3px) rotate(-.5deg) perspective(1600px) rotateY(30deg)}
+  70%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(30deg)}
+  85%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(30deg)}
+  100%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(30deg)}
+
+}
+
+@keyframes logo-entrada {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 100;
+  }
+}
+
+@keyframes blinkxd {
+  0% {
+      filter: brightness(0.75)
+  }
+  50% {
+      filter: brightness(1.75)
+  }
+  100% {
+      filter: brightness(0.75)
+  }
+}
+
+@keyframes entrada-iniciar {
+  0% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+@keyframes boton-click {
+  0% {
+      transform: scale(1.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1.0);
+      opacity: 100;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
