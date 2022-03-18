@@ -15,7 +15,7 @@ Hello! This is a simple panel to see the reputation of certain jobs, drugs and c
 # License
 
     QBCore Framework
-    Copyright (C) 2021 Joshua Eger
+    Copyright (C) 2022 Joshua Eger
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
